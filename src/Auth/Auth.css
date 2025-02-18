@@ -1,0 +1,24 @@
+.toggle {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: antiquewhite;
+  }
+
+.button1{
+    color: rgb(226, 145, 23);
+    font-size: small;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  .Signup{
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin: 50px;
+    padding: 5px;
+  }
+
+  h3{
+    text-align: center;
+    padding: 10px;
+  }

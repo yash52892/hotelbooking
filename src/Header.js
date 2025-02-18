@@ -1,6 +1,11 @@
 import './App.css';
+import { useNavigate } from 'react-router-dom';
 
 const Header=()=>{
+    const nav=useNavigate();
+    const handleSign=()=>{
+        nav('/sign');
+    }
     return(
         <div>
         <header class="global-navigation-row primary">
@@ -10,7 +15,7 @@ const Header=()=>{
             <ul class="navbar-nav ml-auto"> 
               <input type='text' placeholder='search'></input>
               <button class="search">Search</button>
-              <button class="signin">Sign In</button>
+              <button class="signin" onClick={handleSign}>Sign In</button>
             </ul>
           </div>
           <div class="cart">
