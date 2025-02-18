@@ -11,20 +11,21 @@ const Add = () => {
     const Rprice = useRef(0);
     
 
-    const temp = useFetch(`https://food-app-76ef6-default-rtdb.firebaseio.com/admin/recipes.json`);
+    const temp = useFetch(`https://hotelbooking-user-default-rtdb.firebaseio.com/properties.json`);
   
     const arr = Object.entries(temp.data || {});
      
-    const rec=arr.map((i)=>(<List rece={{key:i[0], Rc:i[1].Rc, Ri:i[1].Ri, Rn:i[1].Rn, Rp:i[1].Rp}}/>));
-    const addRecipes = (e) => {
+    const rec=arr.map((i)=>(<List rece={{key:i[0], Rc:i[1].Rc, Ri:i[1].Ri, Rn:i[1].Rn, Rp:i[1].Rp, status:i[1].status}}/>));
+    const addProperties = (e) => {
         e.preventDefault();
         let Robj = {
             Rn: Rname.current.value,
             Rc: Rcatagories.current.value,
             Ri: Raddress.current.value,
-            Rp: Rprice.current.value
+            Rp: Rprice.current.value,
+            status:1
         }
-        fetch(`https://food-app-76ef6-default-rtdb.firebaseio.com/admin/recipes.json`, {
+        fetch(`https://hotelbooking-user-default-rtdb.firebaseio.com/properties.json`, {
             method: "POST",
             body: JSON.stringify(Robj),
             headers: {
@@ -37,7 +38,7 @@ const Add = () => {
         <>
             <div className='container1'>
                 <h3>Add Properties</h3>
-                <Form onSubmit={addRecipes}>
+                <Form onSubmit={addProperties}>
                     <input type="text" placeholder="Property name" ref={Rname} />
                     <select ref={Rcatagories}>
                         <option>Select catagories</option>

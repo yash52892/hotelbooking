@@ -19,7 +19,7 @@ const MydModalWithGrid = (props) => {
         Ri: Raddress.current.value,
         Rp: Rprice.current.value
     }
-        fetch(`https://food-app-76ef6-default-rtdb.firebaseio.com/admin/recipes/${props.data.rece.key}.json`
+        fetch(`https://hotelbooking-user-default-rtdb.firebaseio.com/properties/${props.data.rece.key}.json`
             ,{
             method:"PUT",
             body: JSON.stringify(Robj),

@@ -8,6 +8,7 @@ const Admin = () => {
         <>
         <div className="admin">
             <button onClick={() => nav("/admin/addcatagories")}>Add Properties</button>
+            <button onClick={() => nav("/admin/pendings")}>Approve Bookings</button>
             </div>
         </>
     )
