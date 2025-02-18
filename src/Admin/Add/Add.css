@@ -1,0 +1,16 @@
+.box{
+    margin: 1px;
+    padding: 2px;
+    border: 2px inset black;
+    border-bottom-left-radius: 25px
+}
+.biggerbox{
+    background-color:antiquewhite;
+    display: grid;
+  grid-template-columns: auto auto auto auto ;
+  padding: 10px;
+}
+
+.box h4{
+    text-align: center;
+}

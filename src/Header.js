@@ -7,7 +7,7 @@ const Header=()=>{
         nav('/sign');
     }
     return(
-        <div>
+        <div className='header'>
         <header class="global-navigation-row primary">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <a class="navbar-brand" href="#">Bookie</a>

@@ -51,7 +51,7 @@ const Signup = () =>{
     };
 
     const handleSwitch = () =>{
-        nav("/login_user");
+        nav("/login");
     }
 
     return(

@@ -1,0 +1,17 @@
+.container{
+    background-color: burlywood;
+}
+
+.container1{
+    background-color: burlywood;
+    margin: 50px;
+    padding: 30px;
+}
+.admin{
+    padding: 80px;
+    position:center;
+}
+button{
+    padding: auto;
+    margin-right: 10px;
+}
